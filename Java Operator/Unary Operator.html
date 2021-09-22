@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+             <title>Java Unary Operator</title>
+             <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+<body>
+
+
+<div class="header">
+  <h2>Learn Java</h2>
+</div>
+
+
+
+
+
+<div class="sidebar">
+
+  <a class="active" href="index.html">Navigaton</a>
+  <a href="about.html">Navigaton</a>
+  <a href="#news">Navigaton</a>
+
+</div>
+
+<br><br>
+   
+<h2>Learn Java Unary Operator</h2>
+<p>Created, Sep 22, 2021</p><br>
+
+     
+
+  <h2>Code :</h2>
+<pre>
+
+-------------------------------------------------------------------------------------------      
+/*
+ Unary operator 
+unary + ,
+unary  - ,
+increment ++ ,
+decrement -- 
+ */
+package operatorunary;
+
+/**
+ *
+ * @author Md Mahin Hossain
+ */
+public class OperatorUnary {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int x = -10;
+        int result ;
+        
+        result = +x;
+        System.out.println("result  = "+result);
+       
+        result = -x;
+        System.out.println("result  = "+result);
+        
+    }
+    
+}
+
+      
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+ run:
+result  = -10
+result  = 10
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+-------------------------------------------------------------------------------------------
+</pre>
+<h2>-------------------------------------------------------------------------</h2>
+
+  <h2>Increment And Decrement -</h2>
+
+
+<h2>Code :</h2>
+<pre>
+
+-------------------------------------------------------------------------------------------      
+/*
+ increment Decrement Example
+Pre Increment = ++x
+Post increment = x++
+
+Pre Decrement = --x
+Post Decrement = x--
+
+ */
+package incrementdecrement;
+
+/**
+ *
+ * @author Md Mahin Hossain
+ */
+public class IncrementDecrement {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        System.out.println("post increment ");
+        int a = 25 ;
+         int b ;
+       
+        b = a++ ; // post increment       
+        System.out.println("x = "+b);
+        
+        b = a ;
+        System.out.println("x = "+b);
+        
+        System.out.println("\n");
+        
+        System.out.println("Pre increment ");       
+        int c = 30 ;
+        int d;
+        
+        d = ++c;// pre increment
+        System.out.println("c = "+d);
+        
+        d = c;
+        System.out.println("c = "+d);
+        
+        
+        System.out.println("\n");
+        System.out.println(".............Decrement section............");
+        System.out.println("\n");
+        
+        
+        System.out.println("post decrement ");
+        int e = 25 ;
+        int f ;
+        
+        f = e-- ; // post decrement       
+        System.out.println("x = "+f);
+        
+        f = e ;
+        System.out.println("x = "+f);
+        
+        System.out.println("\n");
+        
+        System.out.println("Pre decrement ");       
+        int g = 30 ;
+        int h;
+        
+        h = --g;// pre decrement
+        System.out.println("c = "+h);
+        
+        h = g;
+        System.out.println("c = "+h);
+        
+    }
+    
+}
+
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+ run:
+post increment 
+x = 25
+x = 26
+
+
+Pre increment 
+c = 31
+c = 31
+
+
+.............Decrement section............
+
+
+post decrement 
+x = 25
+x = 24
+
+
+Pre decrement 
+c = 29
+c = 29
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+-------------------------------------------------------------------------------------------
+</pre>
+
+
+
+
+
+
+<div class="footer">
+  <p>Code Copyright @ 2021 - Ahb Mahin Hossain</p>
+</div>
+
+</body>
+
+</html>
