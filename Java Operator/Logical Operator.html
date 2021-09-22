@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+             <title>Java Conditonal Operator</title>
+             <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+<body>
+
+
+<div class="header">
+  <h2>Learn Java</h2>
+</div>
+
+
+
+
+
+<div class="sidebar">
+
+  <a class="active" href="index.html">Navigaton</a>
+  <a href="about.html">Navigaton</a>
+  <a href="#news">Navigaton</a>
+
+</div>
+
+<br><br>
+   
+<h2>Learn Java Logical Operator</h2>
+<p>Created, Sep 22, 2021</p><br>
+
+      
+
+  <h2>Code :</h2>
+<pre>
+
+-------------------------------------------------------------------------------------------      
+
+package operatorlogical;
+
+import java.util.Scanner;
+/**
+ *
+ * 
+ * Logical AND &&
+ * Logical OR ||
+ * Logical NOT !
+ * 
+ * @author Md Mahin Hossain
+ */
+public class OperatorLogical {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       Scanner input = new Scanner(System.in);
+       char ch;
+       
+        System.out.print("Enter Your Character :");
+        ch = input.next().charAt(0);
+        
+        
+        if(ch=='a' || ch=='e' || ch=='i' ||ch=='o' || ch=='u' ){
+        
+            System.out.println(ch+" is vowel");
+        }
+        else if(ch=='A' || ch=='E' || ch=='I' ||ch=='O' || ch=='u'){
+        
+            System.out.println(ch+" is vowel");
+        }
+            
+        else{
+        System.out.println(ch+" is consonant");
+        }
+       
+       
+    }
+    
+}
+
+      
+      
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+  run:
+Enter Your Character : A
+A is vowel
+BUILD SUCCESSFUL (total time: 3 seconds)
+
+-------------------------------------------------------------------------------------------
+</pre>
+
+
+
+
+<h2> Here is a example for practice . 
+
+
+  <h2>Capital small latter cheacking exampleCode :</h2>
+<pre>
+
+-------------------------------------------------------------------------------------------      
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package operatorlogical;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Md Mahin Hossain
+ */
+public class CapitalSmallCheaking {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       char ch;
+       
+        System.out.print("Enter Your Character :");
+        ch = input.next().charAt(0);
+        
+        if(ch>='a' && ch<='z'){
+        
+            System.out.println(ch+" is Small Letter ");
+        }
+        
+        else if(ch>='A' && ch<='Z'){
+        
+            System.out.println(ch+" is capital Letter ");
+        }
+        else {
+            System.out.println(ch+" is not letter");}   
+    }
+}
+
+      
+      
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+
+run:
+Enter Your Character :A
+A is capital Letter 
+BUILD SUCCESSFUL (total time: 4 seconds)
+
+
+-------------------------------------------------------------------------------------------
+</pre>
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>Code Copyright @ 2021 - Ahb Mahin Hossain</p>
+</div>
+
+</body>
+
+</html>
