@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+             <title>Java Conditonal Operator</title>
+             <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+<body>
+
+
+<div class="header">
+  <h2>Learn Java</h2>
+</div>
+
+
+
+
+
+<div class="sidebar">
+
+  <a class="active" href="index.html">Navigaton</a>
+  <a href="about.html">Navigaton</a>
+  <a href="#news">Navigaton</a>
+
+</div>
+
+<br><br>
+   
+<h2>Learn Java Conditional Operator</h2>
+<p>Created, Sep 22, 2021</p><br>
+
+      
+
+  <h2>Code :</h2>
+<pre>
+
+-------------------------------------------------------------------------------------------      
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package operatorconditional;
+
+/**
+ *
+ * @author Mahin
+ */
+import java.util.Scanner;
+
+public class OperatorConditional {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double num1, num2 ,large ;
+        
+        System.out.print("Enter Number 1 = ");
+        num1 = input.nextDouble();
+       
+        System.out.print("Enter Number 2 = ");
+        num2 = input.nextDouble();
+        
+        
+        large = (num1>num2)? num1 : num2 ; // conditional operator line
+        
+        System.out.println("Large number is = "+large);
+        
+        
+    }
+    
+}
+
+      
+      
+      
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+  run:
+Enter Number 1 = 10
+Enter Number 2 = 20
+Large number is = 20.0
+BUILD SUCCESSFUL (total time: 6 seconds)
+
+-------------------------------------------------------------------------------------------
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>Code Copyright @ 2021 - Ahb Mahin Hossain</p>
+</div>
+
+</body>
+
+</html>
