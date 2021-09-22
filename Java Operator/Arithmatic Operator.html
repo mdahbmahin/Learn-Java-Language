@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+             <title>Java Arithmatic Operator</title>
+             <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
+
+<body>
+
+
+<div class="header">
+  <h2>Learn Java</h2>
+</div>
+
+
+
+
+
+<div class="sidebar">
+
+  <a class="active" href="index.html">Navigaton</a>
+  <a href="about.html">Navigaton</a>
+  <a href="#news">Navigaton</a>
+
+</div>
+
+<br><br>
+   
+<h2>Learn Java Arithmatic Operator</h2>
+
+<p>Created, Sep 22, 2021</p><br>
+
+      
+
+  
+<pre>
+
+-------------------------------------------------------------------------------------------      
+/*
+ This is Simple calculator code using Arithmatic Operator
+ */
+
+/*
+ 
+ Arithmatic opearators = ( +,-,*,/,% )   
+
+ */
+package operatorarithmatic;
+
+import java.util.Scanner;
+public class OperatorArithmatic {
+
+    
+    public static void main(String[] args) {
+        
+        
+        int num1, num2, result;
+        
+        Scanner input = new Scanner ( System.in);
+        
+        System.out.print("Enter Your First Number : ");
+        num1= input.nextInt();
+        System.out.println("Your First Number Is "+num1);
+        
+        System.out.print("Enter Your Second Number : ");
+        num2= input.nextInt();
+        System.out.println("Your Second Number is "+num2);
+        
+        
+        
+        result = num1 + num2 ;
+        System.out.println("summation is :"+result);
+        
+        result = num1 - num2 ;
+        System.out.println("Subtraction is :"+result);
+        
+        result = num1 * num2 ;
+        System.out.println("Multiplication is :"+result);
+        
+        double  Doubleresult = (double )num1 / num2 ;  //This is typecasting Line .
+        System.out.println("Dividation is :"+  Doubleresult);
+        
+        
+        result = num1 % num2 ;
+        System.out.println("Remainder is :"+result);
+        
+  
+        
+    }
+    
+}
+
+      
+      
+      
+</pre>
+      
+      
+<p>Result:</p>    
+      
+<pre>
+   
+   run:
+Enter Your First Number : 10
+Your First Number Is 10
+Enter Your Second Number : 20
+Your Second Number is 20
+summation is :30
+Subtraction is :-10
+Multiplication is :200
+Dividation is :0.5
+Remainder is :10
+BUILD SUCCESSFUL (total time: 14 seconds)
+
+   
+-------------------------------------------------------------------------------------------
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <p>Code Copyright @ 2021 - Ahb Mahin Hossain</p>
+</div>
+
+</body>
+
+</html>
